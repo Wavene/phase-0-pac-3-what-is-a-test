@@ -1,5 +1,22 @@
-const { name, height, message } = require("../index.js");
+// const { expect,it } = require("chai");
+const { name, height, message,add } = require("../index.js");
 
+
+describe("Should add two numbers",()=>{
+  it("Expect result to be 3",()=>{
+    let a=1
+    let b=2
+    let result=add(a,b)
+    expect(result).toEqual(3)
+  })
+
+  it("Expect result to be 3",()=>{
+    let a=2
+    let b=2
+    let result=add(a,b)
+    expect(result).toEqual(4)
+  })
+})
 /*
 describe('what-is-a-test', () => {
   describe('Name', () => {
